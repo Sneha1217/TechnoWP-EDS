@@ -418,7 +418,7 @@ main > .section.banner-container {
   padding: 0;
 }
 
-main > .section.blue {
+main .section.blue {
   background-color: var(--accent);
   color: #fff;
   padding: 50px 0;
