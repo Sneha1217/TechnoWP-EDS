@@ -1,23 +1,43 @@
+.logos {
+  width: 100%;
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
 .logos ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between; /* Spreads logos across the full width */
   align-items: center;
-  gap: 24px 56px;
+  gap: 24px;
+  width: 100%;
 }
 
-.logos li { line-height: 0; }
+.logos li {
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 0px; /* Forces all 5 logo containers to share width equally */
+}
 
 .logos img {
-  width: auto;
-  height: 40px;
-  opacity: 1;
+  width: 100%;
+  max-width: 180px; /* Increased logo size limit */
+  height: auto;
+  max-height: 90px; /* Increased height limit */
+  object-fit: contain;
+  opacity: 1; /* Always full opacity */
+  filter: none; /* No greyscale or visual filters */
+  transition: none; /* Removed hover animation */
 }
 
+/* Hover effects completely removed */
 .logos li:hover img {
   opacity: 1;
   filter: none;
+  transform: none;
 }
