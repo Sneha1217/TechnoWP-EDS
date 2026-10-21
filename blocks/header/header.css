@@ -222,6 +222,8 @@ header nav .nav-sections .nav-drop > button[aria-expanded='false'] + ul {
     display: block;
     visibility: visible;
     white-space: nowrap;
+    flex: 0 0 auto;       /* Prevents stretching across the whole middle */
+    margin-left: auto;
   }
 
   header nav .nav-sections ul {
